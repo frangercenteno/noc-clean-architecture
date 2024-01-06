@@ -8,8 +8,8 @@ interface SendLogEmailUseCase {
 
 export class SendEmailLogs implements SendLogEmailUseCase {
   constructor(
-    private readonly logRepository: LogRepository,
-    private readonly emailService: EmailService
+    private readonly emailService: EmailService,
+    private readonly logRepository: LogRepository
   ) {}
 
   async execute(to: string | string[]): Promise<boolean> {

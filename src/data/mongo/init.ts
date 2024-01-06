@@ -1,23 +1,21 @@
 import mongoose from "mongoose";
 
 interface ConnectionOptions {
-  mogoUrl: string;
+  mongoUrl: string;
   dbName: string;
 }
 
 export class MongoDatabase {
   static async connect(options: ConnectionOptions) {
-    const { mogoUrl, dbName } = options;
+    const { mongoUrl, dbName } = options;
     try {
-      await mongoose.connect(mogoUrl, {
+      await mongoose.connect(mongoUrl, {
         // useNewUrlParser: true,
         // useUnifiedTopology: true,
         dbName,
       });
-
-      console.log("Mongo connected");
+      return true;
     } catch (error) {
-      console.log("Mongo connection error: ");
       throw error;
     }
   }

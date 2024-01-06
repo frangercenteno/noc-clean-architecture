@@ -39,6 +39,12 @@ pnpm install
 docker-compose up -d
 ```
 
+## Migrations
+
+```
+npm run migrate
+```
+
 ## API Documentation
 
 If the project includes an API, provide detailed documentation on its endpoints, request/response formats, and any authentication/authorization requirements.

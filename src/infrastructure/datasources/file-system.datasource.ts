@@ -1,5 +1,5 @@
 import fs from "fs";
-import { LogDataSource } from "../../domain/datasources/log.datasorce";
+import { LogDataSource } from "../../domain/datasources/log.datasource";
 import {
   LogEntity,
   LogSeverityLevel,

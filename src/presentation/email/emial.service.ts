@@ -6,14 +6,14 @@ import {
   LogSeverityLevel,
 } from "../../domain/entities/log.entities";
 
-interface EmailServiceInterface {
+export interface EmailServiceInterface {
   to: string | string[];
   subject: string;
   htmlBody: string;
-  attachments: Attachment[];
+  attachments?: Attachment[];
 }
 
-interface Attachment {
+export interface Attachment {
   filename: string;
   path: string;
 }

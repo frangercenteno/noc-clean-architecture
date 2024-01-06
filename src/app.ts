@@ -9,7 +9,7 @@ import { Server } from "./presentation/server";
 
 async function main() {
   await MongoDatabase.connect({
-    mogoUrl: envs.MONGO_URL,
+    mongoUrl: envs.MONGO_URL,
     dbName: envs.MONGO_DB_NAME,
   });
 

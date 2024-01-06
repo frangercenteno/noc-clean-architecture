@@ -13,7 +13,7 @@ const logSchema = new mongoose.Schema({
     enum: ["low", "medium", "high"],
     default: "low",
   },
-  createAt: {
+  createdAt: {
     type: Date,
     default: new Date(),
   },

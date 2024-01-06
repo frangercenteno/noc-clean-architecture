@@ -1,5 +1,5 @@
 import { LogModel } from "../../data/mongo";
-import { LogDataSource } from "../../domain/datasources/log.datasorce";
+import { LogDataSource } from "../../domain/datasources/log.datasource";
 import {
   LogEntity,
   LogSeverityLevel,

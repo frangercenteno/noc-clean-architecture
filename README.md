@@ -33,6 +33,12 @@ yarn install
 pnpm install
 ```
 
+## DB Setup
+
+```
+docker-compose up -d
+```
+
 ## API Documentation
 
 If the project includes an API, provide detailed documentation on its endpoints, request/response formats, and any authentication/authorization requirements.
